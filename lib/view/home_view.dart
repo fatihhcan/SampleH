@@ -19,7 +19,7 @@ class _HomeViewState extends State<HomeView> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Card(
-              child: FutureBuilder<Post>(
+              child: FutureBuilder<Question>(
                   future: getPost(),
                   builder: (context, snapshot) {
                     if (snapshot.connectionState == ConnectionState.done)
